@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+
+
+    <table>
+        <tr>
+            <th colspan="2">Nome Completo</th>
+            <td>Idade</td>
+        </tr>
+        <tr>
+            <td colspan="2">Jose Costa</td>
+            
+            <td>43</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>Silva</td>
+            <td>60</td>
+        </tr>
+    </table>
+
+        <table>
+        <tr>
+            <td>Nome</td>
+            <td>Maria</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Telefones</td>
+            <td>27 99999-1234</td>
+        </tr>
+        <tr>
+            
+            <td>27 9888-1234</td>
+        </tr>
+    </table>
+    
+<!-- *action, *method, *name, *botão submit-->
+
+    <form action="teste.php" method="get">
+        <fieldset >
+            
+            <input type="radio" name="language" id="html" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" name="language" id="css" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" name="language" id="javascript" value="Javascript">
+            <label for="javascript">javascript</label><br>
+
+            <input type="checkbox" name="veicul1" id="veiculo1" value="Bike">
+            <label for="veiculo1">Bike</label><br>
+            <input type="checkbox" name="veiculo2" id="veiculo2" value="carro">
+            <label for="veiculo2">carro</label><br>
+            <input type="checkbox" name="veiculo3" id="veiculo3" value="Barco">
+            <label for="veiculo3">Barco</label><br>
+            
+            <input list="browser" name="browser">
+            <datalist id="browser">
+                <option value="Edge"></option>
+                <option value="Firefox"></option>
+                <option value="Chrome"></option>
+                <option value="Opera"></option>
+                <option value="Safari"></option>
+            </datalist>
+
+            <label for="ddlCarros">Escolha o carro</label>
+            <select name="Carros" id="ddlCarros">
+                <option value="volvo">Volvo</option>
+                <option value="audi">Audi</option>
+                <option value="bmw">BMW</option>
+            </select>
+
+            <textarea name="txtsugestao" id="sugestao" rows="10" cols="50">
+                minha sugestão é estuda. Só chegamos la
+            </textarea><br>
+
+            <label for="login">Login</label>
+            <input type="text" name="" id="login" autofocus placeholder="Digite seu num do cartao rsrs"><br>
+            <br>
+            <label for="txtCompleto">Nome Completo</label>
+            <input type="text" name="" id="txtCompleto" required maxlength="30">
+            <br>
+
+            <label for="txtQuantidade">Quantidade (Entre 1 a 5 numeros)</label>
+            <input type="number" name="" id="txtQuantidade" min="1" max="5">
+
+            <label for="txtdata">Data:</label>
+            <input type="date" name="txtdata" id="" max="2020-12-12" min="0000-00-00">
+
+            <label for="txthora"></label>
+            <input type="time" name="" id="txthora">
+
+            <br>
+            <legend>Cadastro de cliente</legend>
+            <label for="nome">Nome:</label>        
+            <input type="text" name="txtname" id="nome">
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" name="txtsobrenome" id="sobrenome">
+            <label for="email"></label>
+            <input type="email" name="email">
+            <input type="button" value="Enviar">
+            <input type="submit" value="N enviar">
+            </fieldset>
+    </form>
+
+</body>
+</html>
